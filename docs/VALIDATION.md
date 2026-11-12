@@ -21,9 +21,10 @@ experiments, not reruns of the full live microphone workflow in this publication
 integration through the separate runner was not dispatched here. No new claim about that gate is made.
 
 No fresh held-out speaker/phrase/room corpus was collected. There is no production false-accept-per-hour benchmark,
-no universal phrase-quality result, and no assurance for different firmware or Echo hardware. Public CI configuration
-is supplied, but no hosted CI result is claimed for this unpublished repository.
+no universal phrase-quality result, and no assurance for different firmware or Echo hardware. The reviewed initial snapshot passed [hosted synthetic CI](https://github.com/BenStein1/pryon-research/actions/runs/43215812663),
+including the 32-test suite, C math oracle, demo and host trainer build. Hosted CI does not execute the proprietary
+runtime or establish acoustic accuracy.
 
-This candidate has one new root commit with a no-reply identity, no inherited private commits or publication remote.
-Its exact file inventory is RELEASE_CONTENTS.json. Publication and the proposed original-code MIT license await
-owner approval; generated vendor-derived models remain excluded regardless of that approval.
+The initial release has one fresh root commit (`88487e5`) with a no-reply identity and no inherited private commits.
+It was published after owner approval; follow-up documentation commits record publication and hosted CI.
+The current exact file inventory is RELEASE_CONTENTS.json. Generated vendor-derived models remain excluded.

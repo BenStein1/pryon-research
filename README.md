@@ -43,6 +43,7 @@ See [architecture and source map](docs/ARCHITECTURE.md).
 | Physical Dot 3 | On-device training prototype; later isolated root install/confirmation/recovery and stock inference | Feasibility and tested state transitions; not production readiness |
 
 Only the first row was freshly reanalyzed against retained genuine-runtime feature data during this release pass.
+The exact reviewed snapshot also passed [hosted synthetic CI](https://github.com/BenStein1/pryon-research/actions/runs/43215812663).
 The public tests contain synthetic weights/signals only. Historical captures, model weights and recordings are not
 published. [Exact validation scope](docs/VALIDATION.md).
 
@@ -79,7 +80,8 @@ The actual web enrollment, installer and recovery feature lives in
 [Ben's echo-dot-assist fork](https://github.com/BenStein1/echo-dot-assist), proposed upstream in
 [training PR #172](https://github.com/Gamer92000/echo-dot-assist/pull/172). The companion
 [reconstruction PR #171](https://github.com/Gamer92000/echo-dot-assist/pull/171) contains supporting research tools.
-Their status was checked during release preparation; neither had merged. This standalone candidate is not yet published.
+Their status was checked during release preparation; neither had merged. This standalone source-only release is now
+published here; the reviewed initial snapshot is commit `88487e5`.
 
 The Home Assistant satellite, Echo integration and platform were built by
 [Julian Imhof / Gamer92000](https://github.com/Gamer92000/echo-dot-assist); hardware unlock work belongs to its credited

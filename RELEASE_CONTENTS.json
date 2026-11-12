@@ -38,15 +38,15 @@
     },
     {
       "path": "README.md",
-      "bytes": 6518,
-      "sha256": "376f1a890d4342466ff83845f095d46bafa11eaeac5ee40a60418bf445c101e1",
+      "bytes": 6713,
+      "sha256": "3e6203b69a74380624fee337fc940b9b997b6b95ee0f8d720ce3fd94a48b9f89",
       "role": "curated public documentation / scalar evidence",
       "provenance": "written or adapted for this release"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1920,
-      "sha256": "1e7753c0edfd55c7542c450f9f254da63acf03468aaaacc4968f87960364bd73",
+      "bytes": 1911,
+      "sha256": "fd97cca3fed5b6f7adeace1187b3fea07d3d1bbeb1af8b1bf4244fc8d44e65e0",
       "role": "curated public documentation / scalar evidence",
       "provenance": "written or adapted for this release"
     },
@@ -121,8 +121,8 @@
     },
     {
       "path": "docs/RELEASE_REVIEW.md",
-      "bytes": 3144,
-      "sha256": "3cd59eeb22a4a9cb53867325de1655461ded40c59b650dcc48f6f58dbd475bcf",
+      "bytes": 3392,
+      "sha256": "d6458cc7c6ae00f56fd37ade9d1f1b66fe4e516cf20793fb89ba8bc66f5f3920",
       "role": "curated public documentation / scalar evidence",
       "provenance": "written or adapted for this release"
     },
@@ -135,8 +135,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 2820,
-      "sha256": "cc8ae009b8815ef2a3cd9a177aab20074189a7bceecc78c65d9247cf18247495",
+      "bytes": 3009,
+      "sha256": "5b64d7bda7d17f948f6f249d9e3ab5bd898b15edd3aef8cd7a3a30dcf4382264",
       "role": "curated public documentation / scalar evidence",
       "provenance": "written or adapted for this release"
     },

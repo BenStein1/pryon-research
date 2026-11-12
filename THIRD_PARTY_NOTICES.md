@@ -1,6 +1,6 @@
 # Third-party notices
 
-The proposed license for BenStein1's original release work is MIT (`LICENSE`). These terms do not supersede the notices
+The license for BenStein1's original release work is MIT (`LICENSE`). These terms do not supersede the notices
 below or grant rights to excluded firmware, model weights, candidate packages or recordings.
 
 - **echo-dot-assist:** Copyright (c) 2026 Julian Imhof; MIT. The complete notice is in

@@ -1,8 +1,10 @@
 # Public-release boundary and approval
 
-This is a separate, fresh-history release candidate. It has no publishing remote; the original private repository's
-visibility and historical commits remain unchanged. Publication requires the owner's approval of the exact final
-commit, contents manifest and proposed MIT license.
+This source-only release was prepared and approved separately from the private research repository. The reviewed
+initial snapshot `88487e5` is published at https://github.com/BenStein1/pryon-research with its MIT license and retained
+third-party notices. Its original 58-file inventory remains available at that commit. The private repository's
+visibility and historical commits remain unchanged. Subsequent publication-status documentation changes retain the
+same source-only boundary; the current inventory reflects those files.
 
 ## Included
 
@@ -37,8 +39,8 @@ results have finite detection coverage; they are evidence, not a promise that ar
 recognized automatically. The curated documents and source selection were reviewed separately from pattern scans.
 See VALIDATION.md for the exact completed checks and remaining limits.
 
-## Approval decision
+## Approval and future changes
 
-Approve the candidate commit and exact inventory, the MIT proposal for original work, and a destination for a new
-public repository (suggested name: `pryon-research`). Only then create/push that new repository. Do not make the
-original private repository public or import its Git history. Do not include private artifacts in a release attachment.
+The owner approved the reviewed source-only snapshot and publication as `BenStein1/pryon-research`. The original
+private repository must remain private; its Git history and artifacts must not be imported into this release.
+New artifacts require their own review before publication. No private artifacts belong in a release attachment.
