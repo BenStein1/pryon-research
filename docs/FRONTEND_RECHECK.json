@@ -1,0 +1,7 @@
+{
+  "scope": "normalized conv1 input; caller-supplied private capture, no stock execution",
+  "frames": 828,
+  "bins": 64,
+  "exact_frames": 828,
+  "max_abs_error": 0.0
+}

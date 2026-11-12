@@ -1,0 +1,576 @@
+{
+  "scope": "Exact source-only publication tree; this manifest is its sole self-hash exception",
+  "files": [
+    {
+      "path": ".github/workflows/synthetic.yml",
+      "bytes": 450,
+      "sha256": "a60f0c0702a82bdd6e0acd38dcad9dd7863cf97e2de0498f52bad2c4b0f4c07e",
+      "role": "build / dependency / CI metadata",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 91,
+      "sha256": "9cdc30c9152c6bf62d09d2510bdf6e84a14705430584e298def49acf4ccc94e1",
+      "role": "build / dependency / CI metadata",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "AUTHORS.md",
+      "bytes": 1900,
+      "sha256": "fdc3850e23f97560170dbed93920fa3f96b4b01de693b99f14f9c5c5309dbdd5",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1221,
+      "sha256": "fd6cce9d7b82f3675fe5a4ddfd0e7e4310264184742add635b90d3c254a0b721",
+      "role": "license / attribution",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 1263,
+      "sha256": "686df6fb5b211fb2425aa17b795ba04d47e3c3b4a9781d58c58f23b16dcffc99",
+      "role": "build / dependency / CI metadata",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6518,
+      "sha256": "376f1a890d4342466ff83845f095d46bafa11eaeac5ee40a60418bf445c101e1",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1920,
+      "sha256": "1e7753c0edfd55c7542c450f9f254da63acf03468aaaacc4968f87960364bd73",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "compare_frontend_capture.py",
+      "bytes": 2082,
+      "sha256": "58cffde1a42164eb6433e3fb5e05a42473baf6099c73cc717dc741ac38fcf72c",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "written or adapted for this release",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pathlib",
+        "pryon_runtime_analysis"
+      ]
+    },
+    {
+      "path": "convert_pryon_native.py",
+      "bytes": 24469,
+      "sha256": "456a991e65f6184ff50bbbd2cfa1828b54838021ff736ba32024d2b3e7580aea",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "__future__",
+        "onnx",
+        "pathlib",
+        "pryon_paths"
+      ]
+    },
+    {
+      "path": "demo.py",
+      "bytes": 1558,
+      "sha256": "476eeabcea4448837ab9cac89758d3416792835a44b868039404c30a2bca41ef",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "written or adapted for this release",
+      "python_syntax_checked": true,
+      "imports": [
+        "pryon_decoder",
+        "pryon_qat",
+        "pryon_runtime_analysis",
+        "train_pryon_streaming"
+      ]
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 2739,
+      "sha256": "e2431cef38639737ab76f96f3ab5d1719090a1158c759fc80b2c889c68541f3e",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "docs/DEMO_OUTPUT.json",
+      "bytes": 381,
+      "sha256": "18818cace66dc40aa228281c33b852353f26570f9b9eae382a9f0584940d75fb",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "docs/EVIDENCE.md",
+      "bytes": 5768,
+      "sha256": "32bab6f4107d1675891ace8c421213f925392ccfdf2b62d23d942cdfaa766fc2",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "docs/FRONTEND_RECHECK.json",
+      "bytes": 171,
+      "sha256": "cacc33878179f814ff939a90a171032bc16e002515b32160bf1b563e196586be",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "docs/RELEASE_REVIEW.md",
+      "bytes": 3144,
+      "sha256": "3cd59eeb22a4a9cb53867325de1655461ded40c59b650dcc48f6f58dbd475bcf",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "bytes": 3022,
+      "sha256": "27ebe8dd4f4018650a47c1d877590f8d17bc03b27f8b53966f603101cc8cd07e",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2820,
+      "sha256": "cc8ae009b8815ef2a3cd9a177aab20074189a7bceecc78c65d9247cf18247495",
+      "role": "curated public documentation / scalar evidence",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "licenses/Kaldi-COPYING.txt",
+      "bytes": 17264,
+      "sha256": "e68f06f3248553b47aa0014d176697c3cabab88395dd073f2887312742fa80b9",
+      "role": "license / attribution",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "licenses/Ne10-LICENSE.txt",
+      "bytes": 1662,
+      "sha256": "c649211fabcadab5ec04e25192bae3ba15981b64a343fd868b357119d39f9546",
+      "role": "license / attribution",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "licenses/echo-dot-assist-MIT.txt",
+      "bytes": 1069,
+      "sha256": "b5b29be2e76d7b59d9fba36d5c1f5285b239407dd5b0a0a3a210aca709d0cf87",
+      "role": "license / attribution",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "native/pryon_qat.c",
+      "bytes": 17669,
+      "sha256": "2045eadae48b192dc26b09bdeb9ec795e1fab8e5dd3ac220e1cdabca4cd9c226",
+      "role": "portable trainer / mathematical implementation",
+      "provenance": "private-research"
+    },
+    {
+      "path": "native/pryon_qat.h",
+      "bytes": 1094,
+      "sha256": "fe65514436a645a9efcaedc3019680431e33013cd39311803ff0a2a5b8d4c23a",
+      "role": "portable trainer / mathematical implementation",
+      "provenance": "private-research"
+    },
+    {
+      "path": "native/pryon_qat_test.c",
+      "bytes": 2221,
+      "sha256": "7f794fed100b430f791af5de19b56bdaa2a2e9a7c5c665019c4e7ae60c2da9ca",
+      "role": "portable trainer / mathematical implementation",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "native/pryon_train.c",
+      "bytes": 12016,
+      "sha256": "d7b1f4682440bb5a67fd5581d32de49f5679e96876a673d486e6f278d7dbfd8b",
+      "role": "portable trainer / mathematical implementation",
+      "provenance": "private-research"
+    },
+    {
+      "path": "native/support/hash.c",
+      "bytes": 7187,
+      "sha256": "9841faf6f1d3005a0dd853598717323982c65cb6da39c8553234e7ebc54dfcad",
+      "role": "upstream support source; retained MIT notice",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "native/support/hash.h",
+      "bytes": 940,
+      "sha256": "713e74629c6530c5a9c7acc17ae178260e4b93319938c1d389c086c2eede96f7",
+      "role": "upstream support source; retained MIT notice",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "native/support/json.c",
+      "bytes": 10101,
+      "sha256": "371dcf42f5f8e062562722badde029cdef60843dea0460e20260c4b70ebc05ff",
+      "role": "upstream support source; retained MIT notice",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "native/support/json.h",
+      "bytes": 2364,
+      "sha256": "c6ff41f3e6a07f7f5bae9f59a87b4cbe4dd14c165513ad6dc4e5d83125d05fc5",
+      "role": "upstream support source; retained MIT notice",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "pryon_debug_capture.py",
+      "bytes": 14234,
+      "sha256": "61b4d1755696dd3b04f959f0a1730b8f30bed4e94a93690760a697667a1f6cc7",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "public-echo-fork",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib"
+      ]
+    },
+    {
+      "path": "pryon_decoder.py",
+      "bytes": 2435,
+      "sha256": "db81c5ba25f8a2fd15b49e3aaee857f58a9c2748d460414c5ba29e917041d28d",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pryon_quant_model",
+        "pryon_runtime_analysis"
+      ]
+    },
+    {
+      "path": "pryon_dense_adapt.py",
+      "bytes": 9537,
+      "sha256": "0040f865b66e5f0c053242756ac7aa5731c884791e599c06d4d040ab65d0ca9b",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pryon_head_quantize",
+        "pryon_qat",
+        "pryon_quant_model",
+        "pryon_training_io",
+        "train_pryon_streaming"
+      ]
+    },
+    {
+      "path": "pryon_fft_capture.py",
+      "bytes": 5059,
+      "sha256": "fce515db463e853dc9daffed85d844bfe95b7a1c1ceb7132b1a5642c72ca74cc",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "public-echo-fork",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib",
+        "pryon_debug_capture"
+      ]
+    },
+    {
+      "path": "pryon_head_quantize.py",
+      "bytes": 6818,
+      "sha256": "acca8cbea3f2ecde2cc538ebb797ad3fff3f3ef5e1f2b8fdc68dff7c6eba11d8",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "__future__",
+        "onnx"
+      ]
+    },
+    {
+      "path": "pryon_inference.py",
+      "bytes": 1132,
+      "sha256": "2b92dfe13944242b0ef87d5ec7c9f21c93f0537215d93e55a7b394703d87830d",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pryon_decoder",
+        "pryon_runtime_analysis"
+      ]
+    },
+    {
+      "path": "pryon_lfbe.c",
+      "bytes": 17052,
+      "sha256": "1a9c300760d23a1abf1a910665609f02e956fdac9d468b341a7c891615e86f11",
+      "role": "build / dependency / CI metadata",
+      "provenance": "private-research"
+    },
+    {
+      "path": "pryon_lstm_analysis.py",
+      "bytes": 5031,
+      "sha256": "3f6eea88038d9ac752d781321962808888a12a2a7c8ad70199ac7dedad38949a",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pathlib",
+        "pryon_paths",
+        "pryon_runtime_analysis"
+      ]
+    },
+    {
+      "path": "pryon_native_stream.py",
+      "bytes": 3502,
+      "sha256": "c3ecbafe2cd771d2deb4fa347185da57700ba8a4fc733e938fc82b1293d29719",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib",
+        "pryon_runtime_analysis"
+      ]
+    },
+    {
+      "path": "pryon_paths.py",
+      "bytes": 186,
+      "sha256": "22643eaedf4716f8b74d293f6a959353e8a0e2b1f015bb8243373395e2d2fcc7",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "written or adapted for this release",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib"
+      ]
+    },
+    {
+      "path": "pryon_qat.py",
+      "bytes": 7702,
+      "sha256": "e68824327624b69a3a4c75b43a30b5b27040abcfdf602687ca61e1219f3f8ce3",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pryon_head_quantize",
+        "pryon_quant_model",
+        "scipy.special",
+        "train_pryon_streaming"
+      ]
+    },
+    {
+      "path": "pryon_quant_model.py",
+      "bytes": 7469,
+      "sha256": "5ea8117a5b6387682c4324b005db13b7fa68f2ebbec2cef80e090276b9acebd9",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pryon_paths"
+      ]
+    },
+    {
+      "path": "pryon_runtime_analysis.py",
+      "bytes": 8220,
+      "sha256": "b8d7fa10815aada1c917db35274886a05359d3dd59b180cd108950d60745a434",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pathlib",
+        "pryon_paths"
+      ]
+    },
+    {
+      "path": "pryon_training_io.py",
+      "bytes": 2970,
+      "sha256": "8cfb1920693c4fc2babfce467784f962e64abf1302e4cd9ff7c5500643dac496",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "written or adapted for this release",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pathlib",
+        "pryon_head_quantize"
+      ]
+    },
+    {
+      "path": "requirements.lock.txt",
+      "bytes": 158,
+      "sha256": "5f0209d9b29d99f6cdf821566cecb60062cd24d57f3eab79f8b51245db9b7dd8",
+      "role": "build / dependency / CI metadata",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 62,
+      "sha256": "df8cf9c432a522cb0b3dd3fe889cb97da7b0b7629ef58d996256692d756f7ba1",
+      "role": "build / dependency / CI metadata",
+      "provenance": "written or adapted for this release"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "synthetic fixture or regression test",
+      "provenance": "written or adapted for this release",
+      "python_syntax_checked": true,
+      "imports": []
+    },
+    {
+      "path": "tests/golden_lfbe.json",
+      "bytes": 5225,
+      "sha256": "4274146f4541ab81906956487e57b00999076a7ce763221660f4f4e6ccaf677d",
+      "role": "synthetic fixture or regression test",
+      "provenance": "public-echo-fork"
+    },
+    {
+      "path": "tests/test_lfbe_frontend.py",
+      "bytes": 2033,
+      "sha256": "dafb99383bd5e02c2898d7ac649fca310a5e9395dd53e325d2b7d4f0c55bd1cd",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib",
+        "pryon_runtime_analysis"
+      ]
+    },
+    {
+      "path": "tests/test_lstm_broadcast.py",
+      "bytes": 3763,
+      "sha256": "5e3830d26732431b1e7ebfdda3ca8f01c6bc3eecf6d77027d70c510fe46bfddf",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "__future__",
+        "convert_pryon_native",
+        "onnx"
+      ]
+    },
+    {
+      "path": "tests/test_lstm_contract.py",
+      "bytes": 2301,
+      "sha256": "1165bb4d0a0e65bdc99146f70e080d371900540e9f26557c2492766c2b8d8e22",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pathlib",
+        "pryon_lstm_analysis"
+      ]
+    },
+    {
+      "path": "tests/test_native_pryon_qat.py",
+      "bytes": 6360,
+      "sha256": "ee79432dd1bcdae11bc2f11bc3c182c9525660510e71885e36897cf460f794ed",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib",
+        "pryon_head_quantize",
+        "pryon_qat",
+        "pryon_quant_model",
+        "train_pryon_streaming"
+      ]
+    },
+    {
+      "path": "tests/test_pryon_batchnorm.py",
+      "bytes": 756,
+      "sha256": "87738fd16e56deaf082e0384d5032abceeb2977f3de5f9fcd5dc06d547a29698",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pryon_quant_model"
+      ]
+    },
+    {
+      "path": "tests/test_pryon_dense_adapt.py",
+      "bytes": 4433,
+      "sha256": "d37424c4f3627d9a9d200bfb198a376628a9ae5504fd48378b05d8bbc66e648f",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "onnx",
+        "pryon_dense_adapt",
+        "scipy.optimize",
+        "tests.test_pryon_head_quantize"
+      ]
+    },
+    {
+      "path": "tests/test_pryon_head_quantize.py",
+      "bytes": 4308,
+      "sha256": "9e0319f01c2ca9071e38d465e6970c6e43d8c8f895fbc48cccf68f56c684c94b",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "__future__",
+        "onnx",
+        "pryon_head_quantize"
+      ]
+    },
+    {
+      "path": "tests/test_pryon_qat.py",
+      "bytes": 3103,
+      "sha256": "c68fb5836a788ecdab4620d70f6b24342ff518710dc3d5959eacfc224262dcb9",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pryon_head_quantize",
+        "pryon_qat",
+        "pryon_quant_model",
+        "scipy.optimize"
+      ]
+    },
+    {
+      "path": "tests/test_pryon_streaming_training.py",
+      "bytes": 5839,
+      "sha256": "3ba72883827eccc603e085c55c06bb0151234437e59bb2c6d8f836c10517f93a",
+      "role": "synthetic fixture or regression test",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "pathlib",
+        "scipy.optimize",
+        "train_pryon_streaming",
+        "types",
+        "unittest.mock"
+      ]
+    },
+    {
+      "path": "tests/test_release_demo.py",
+      "bytes": 893,
+      "sha256": "57e5a8b9b277d2ee5605291c90a6ad13bb3161572ce35370dc974e3c26a5155b",
+      "role": "synthetic fixture or regression test",
+      "provenance": "written or adapted for this release",
+      "python_syntax_checked": true,
+      "imports": [
+        "compare_frontend_capture",
+        "demo",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "train_pryon_streaming.py",
+      "bytes": 10473,
+      "sha256": "51209ef15d310e95ae963f8638ab77a10190056bb64560f0c4c5a1927b481e83",
+      "role": "independent numerical implementation / read-only tooling",
+      "provenance": "private-research",
+      "python_syntax_checked": true,
+      "imports": [
+        "functools",
+        "pathlib",
+        "pryon_head_quantize",
+        "pryon_inference",
+        "pryon_paths",
+        "pryon_qat",
+        "pryon_quant_model",
+        "pryon_training_io",
+        "scipy.io",
+        "scipy.optimize",
+        "scipy.special"
+      ]
+    }
+  ]
+}

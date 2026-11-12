@@ -1,0 +1,9 @@
+flatbuffers==25.12.19
+ml-dtypes==0.6.0
+numpy==2.5.4
+onnx==1.23.2
+onnxruntime==1.31.1
+packaging==26.3
+protobuf==7.36.2
+scipy==1.18.1
+typing-extensions==4.16.0

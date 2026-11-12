@@ -1,0 +1,22 @@
+{
+  "synthetic_only": true,
+  "vendor_encoder_executed": false,
+  "frontend_shape": [
+    3,
+    64
+  ],
+  "classifier_sequence_shape": [
+    33,
+    25,
+    100
+  ],
+  "temporal_window_shape": [
+    3,
+    15,
+    3,
+    100
+  ],
+  "initial_quantized_training_loss": 1.412050085399541,
+  "exported_quantized_training_loss": 0.03653533598504654,
+  "synthetic_decoder_accepts": 1
+}

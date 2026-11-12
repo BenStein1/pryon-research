@@ -1,0 +1,11 @@
+.venv/
+build/
+local-data/
+private-assets/
+__pycache__/
+*.pyc
+*.so
+*.onnx
+*.raw
+*.wav
+*.bin
