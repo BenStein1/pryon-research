@@ -28,3 +28,9 @@ runtime or establish acoustic accuracy.
 The initial release has one fresh root commit (`88487e5`) with a no-reply identity and no inherited private commits.
 It was published after owner approval; follow-up documentation commits record publication and hosted CI.
 The current exact file inventory is RELEASE_CONTENTS.json. Generated vendor-derived models remain excluded.
+
+
+Publication follow-up: the Python math test's old floating-generated arguments varied across hosted runners. It now
+pins integer-defined input bits and a new independently measured physical-device libm output SHA, as described in
+EVIDENCE.md. The C FNV test and the reconstruction/training code are unchanged. This is a test reproducibility fix,
+not a relaxed tolerance or a new acoustic accuracy claim.

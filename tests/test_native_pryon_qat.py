@@ -100,20 +100,28 @@ class NativeQATTests(unittest.TestCase):
                 self.lib.pq_release(C.byref(clip))
 
     def test_exp_log_log1p_are_bit_identical_to_the_echos_libm(self):
-        """Golden hash of the real Echo's bionic libm (Android 7.1.2) on 240,006 fixed inputs.
-
-        Captured with local-data/libm-probe/probe.c on the device and, identically,
-        from the firmware's libm.so under QEMU. glibc differs on ~7% of exp results.
-        """
-        import hashlib
+        """Device libm oracle on integer-defined IEEE-754 arguments (no host exp/power generation)."""
+        import hashlib, struct
         for name in ('pq_exp', 'pq_log', 'pq_log1p'):
             fn = getattr(self.lib, name); fn.restype = C.c_double; fn.argtypes = [C.c_double]
-        r = np.random.default_rng(7)
-        x = np.concatenate([r.uniform(-60, 0, 60000), r.uniform(-700, 700, 40000), r.uniform(0, 1, 40000),
-                            np.exp(r.uniform(-40, 40, 40000)), r.uniform(-1+1e-12, 0, 40000),
-                            10.0**r.uniform(-17, -1, 20000), [0.0, 1.0, -1.0, 0.5, 2.0, 1e-300]]).astype('<f8')
+        state = 0x9e3779b97f4a7c15
+        mask = (1 << 64) - 1
+        data = bytearray()
+        for _ in range(240000):
+            state ^= state >> 12
+            state ^= (state << 25) & mask
+            state ^= state >> 27
+            raw = (state * 0x2545F4914F6CDD1D) & mask
+            bits = (raw & ((1 << 52) - 1)) | ((963 + (raw >> 52) % 69) << 52) | (raw & (1 << 63))
+            data.extend(struct.pack('<Q', bits))
+        for bits in (0, 0x3ff0000000000000, 0xbff0000000000000,
+                     0x3fe0000000000000, 0x4000000000000000, 0x0170000000000000):
+            data.extend(struct.pack('<Q', bits))
+        self.assertEqual(hashlib.sha256(data).hexdigest(),
+                         '8de28825c20549bfb3107263dc8ad64d420884aef299ed2e00fe8e62986ab97b')
+        x = np.frombuffer(data, '<f8')
         self.assertEqual(len(x), 240006)
         out = np.array([[self.lib.pq_exp(v), self.lib.pq_log(v), self.lib.pq_log1p(v)] for v in x.tolist()], '<f8')
         bits = out.view('<u8'); bits[np.isnan(out)] = 0x7ff8000000000000  # NaN sign/payload is platform noise
         self.assertEqual(hashlib.sha256(bits.tobytes()).hexdigest(),
-                         'b6ceac3aca5e78f579030a328eae4d5472003cd1ad4709501730cef7231d5e85')
+                         'f29108dc1560898fc4133c2756ca084aacc782292fd26e57a82a12c7e085a269')

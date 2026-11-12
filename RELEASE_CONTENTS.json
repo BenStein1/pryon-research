@@ -107,8 +107,8 @@
     },
     {
       "path": "docs/EVIDENCE.md",
-      "bytes": 5768,
-      "sha256": "32bab6f4107d1675891ace8c421213f925392ccfdf2b62d23d942cdfaa766fc2",
+      "bytes": 7097,
+      "sha256": "900df2863f9bed39e57b14fd5c3642b5f2ed881f6796b30c935c4b02fa29292a",
       "role": "curated public documentation / scalar evidence",
       "provenance": "written or adapted for this release"
     },
@@ -135,8 +135,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 3009,
-      "sha256": "5b64d7bda7d17f948f6f249d9e3ab5bd898b15edd3aef8cd7a3a30dcf4382264",
+      "bytes": 3415,
+      "sha256": "d2db203d3ecebfb75e608d829fe95383de487743caf6d377efb2122ff866e209",
       "role": "curated public documentation / scalar evidence",
       "provenance": "written or adapted for this release"
     },
@@ -458,8 +458,8 @@
     },
     {
       "path": "tests/test_native_pryon_qat.py",
-      "bytes": 6360,
-      "sha256": "ee79432dd1bcdae11bc2f11bc3c182c9525660510e71885e36897cf460f794ed",
+      "bytes": 6662,
+      "sha256": "468c5de6bbc308cc3f556bf24622d2faae4bb1d819ab697e82faa667fea73134",
       "role": "synthetic fixture or regression test",
       "provenance": "private-research",
       "python_syntax_checked": true,

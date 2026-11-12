@@ -73,3 +73,20 @@ configuration was changed; additional checks are recorded separately in VALIDATI
 A fresh full microphone enrollment after the recovery revision, broad false-accept/miss benchmarks, multiple users,
 other Echo models, and robust continuous operation are not established. This is experimental engineering research,
 not production-ready arbitrary-phrase recognition.
+
+
+## Publication follow-up: making the Python math oracle portable
+
+The initial hosted run passed, but a documentation-only follow-up failed the Python math-output SHA assertion while
+the independent C FNV oracle still passed. A diagnostic branch pinned the original argument-array SHA and confirmed
+that hosted runners generated different arguments **before any reconstructed math function was called**. The old
+argument generator used NumPy floating-point exp/power operations; a fixed random seed alone was not a portable
+bit-pattern contract.
+
+The Python regression now constructs 240,006 IEEE-754 arguments using only integer xorshift operations and explicit
+bit patterns. It pins input SHA-256 `8de28825c20549bfb3107263dc8ad64d420884aef299ed2e00fe8e62986ab97b`.
+A new math-only probe ran these exact bytes through the actual Dot 3 libm as the daemon user; its output and the
+unchanged reconstruction both gave SHA-256 `f29108dc1560898fc4133c2756ca084aacc782292fd26e57a82a12c7e085a269`
+after canonicalizing NaNs. Protected files were unchanged, services were not restarted and temporary files were
+removed. Only synthetic argument/output hashes are recorded here, not device identifiers or capture files.
+The original C FNV oracle remains unchanged. No inference/training implementation or acceptance tolerance was altered.
