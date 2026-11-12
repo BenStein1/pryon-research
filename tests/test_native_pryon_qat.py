@@ -113,6 +113,9 @@ class NativeQATTests(unittest.TestCase):
                             np.exp(r.uniform(-40, 40, 40000)), r.uniform(-1+1e-12, 0, 40000),
                             10.0**r.uniform(-17, -1, 20000), [0.0, 1.0, -1.0, 0.5, 2.0, 1e-300]]).astype('<f8')
         self.assertEqual(len(x), 240006)
+        self.assertEqual(hashlib.sha256(x.tobytes()).hexdigest(),
+                         'f3170eccec87c9050d69ede2bb6b1c778588d397abd5bb38a73ed21a959326a4',
+                         'Golden arguments differ before the reconstructed math is called')
         out = np.array([[self.lib.pq_exp(v), self.lib.pq_log(v), self.lib.pq_log1p(v)] for v in x.tolist()], '<f8')
         bits = out.view('<u8'); bits[np.isnan(out)] = 0x7ff8000000000000  # NaN sign/payload is platform noise
         self.assertEqual(hashlib.sha256(bits.tobytes()).hexdigest(),
